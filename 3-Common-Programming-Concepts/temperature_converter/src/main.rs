@@ -21,16 +21,13 @@ fn main() {
 
             let temp_in_celsius: f64 = match temp_in_celsius.trim().parse() {
                 Ok(num) => num,
-                Err(_) => continue
+                Err(_) => continue,
             };
-
 
             let temp_in_fahrenheit = temp_in_celsius * 1.8 + 32.0;
 
             println!("The temperature in Fahrenheit is {temp_in_fahrenheit}");
-        }
-
-        else if choice.trim() == "f" {
+        } else if choice.trim() == "f" {
             println!("Enter temperature in Fahrenheit: ");
             let mut temp_in_fahrenheit = String::new();
 
@@ -40,17 +37,14 @@ fn main() {
 
             let temp_in_fahrenheit: f64 = match temp_in_fahrenheit.trim().parse() {
                 Ok(num) => num,
-                Err(_) => continue
+                Err(_) => continue,
             };
-
 
             let temp_in_celsius = (temp_in_fahrenheit - 32.0) / 1.8;
 
             println!("The temperature in Celsius is {temp_in_celsius}");
-        }
-
-        else {
-            break
+        } else {
+            break;
         }
     }
 }
