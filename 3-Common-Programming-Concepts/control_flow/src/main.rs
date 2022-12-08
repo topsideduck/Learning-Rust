@@ -5,9 +5,7 @@ fn main() {
 
     if number < 5 {
         println!("{number} is less than 5.")
-    }
-
-    else {
+    } else {
         println!("{number} is greater than 5.")
     }
 
