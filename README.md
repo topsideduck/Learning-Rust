@@ -1,2 +1,2 @@
 # Learning-Rust
-The Book Learning Repository
+Git Repository For Rust Tutorial Scripts 
